@@ -30,7 +30,7 @@ button.addEventListener('click', (e)=>{
             Reply.textContent = 'Salom. Sizga qanday yordam bera olaman?'
         }
         if(createdP.textContent =="Siz kimsiz?" || createdP.textContent=="Sen kimsan?" || createdP.textContent=='siz kimsiz?' || createdP.textContent=="sen kimsan?"||createdP.textContent =="Siz kimsiz" || createdP.textContent=="Sen kimsan" || createdP.textContent=='siz kimsiz'||createdP.textContent=="sen kimsan"){
-            Reply.textContent = "Men botman sizning yordamchingiz."
+            Reply.textContent = "Men Maxamadinov Elyorbek tomonidan yaratilgan botman sizning yordamchingiz."
         }
         if(createdP.textContent=="YouTube"|| createdP.textContent=="youtube" || createdP.textContent=="Menga YouTube linkini tashlab ber"){
             Reply.innerHTML = `Mana <a href="https://www.youtube.com" target="_blank" >YouTube</a>. Yordam berganimdan xursandman.`
