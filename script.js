@@ -29,29 +29,38 @@ button.addEventListener('click', (e)=>{
         if(createdP.textContent =='Salom' || createdP.textContent=="salom"){
             Reply.textContent = 'Salom. Sizga qanday yordam bera olaman?'
         }
-        if(createdP.textContent =="Siz kimsiz?" || createdP.textContent=="Sen kimsan?" || createdP.textContent=='siz kimsiz?' || createdP.textContent=="sen kimsan?"||createdP.textContent =="Siz kimsiz" || createdP.textContent=="Sen kimsan" || createdP.textContent=='siz kimsiz'||createdP.textContent=="sen kimsan"){
+        else if(createdP.textContent =="Siz kimsiz?" || createdP.textContent=="Sen kimsan?" || createdP.textContent=='siz kimsiz?' || createdP.textContent=="sen kimsan?"||createdP.textContent =="Siz kimsiz" || createdP.textContent=="Sen kimsan" || createdP.textContent=='siz kimsiz'||createdP.textContent=="sen kimsan"){
             Reply.textContent = "Men Maxamadinov Elyorbek tomonidan yaratilgan botman sizning yordamchingiz."
         }
-        if(createdP.textContent=="YouTube"|| createdP.textContent=="youtube" || createdP.textContent=="Menga YouTube linkini tashlab ber"){
+        else if(createdP.textContent=="YouTube"|| createdP.textContent=="youtube" || createdP.textContent=="Menga YouTube linkini tashlab ber"){
             Reply.innerHTML = `Mana <a href="https://www.youtube.com" target="_blank" >YouTube</a>. Yordam berganimdan xursandman.`
         }
-        if(createdP.textContent=="Instagram"|| createdP.textContent=="instagram" || createdP.textContent=="Menga Instagram linkini tashlab ber"){
+        else if(createdP.textContent=="Instagram"|| createdP.textContent=="instagram" || createdP.textContent=="Menga Instagram linkini tashlab ber"){
             Reply.innerHTML = `Mana <a href="https://www.instagram.com" target="_blank" >Instagram</a>. Yordam berganimdan xursandman.`
         }
-        if(createdP.textContent=="Twitter"|| createdP.textContent=="twitter" || createdP.textContent=="Menga Twitter linkini tashlab ber"){
+        else if(createdP.textContent=="Twitter"|| createdP.textContent=="twitter" || createdP.textContent=="Menga Twitter linkini tashlab ber"){
             Reply.innerHTML = `Mana <a href="https://www.youtube.com" target="_blank" >Twitter</a>. Yordam berganimdan xursandman.`
         }
-        if(createdP.textContent == ''){
+        else if(createdP.textContent == ''){
             Reply.textContent = "???"
         }
-        // else{
-        //     Reply.textContent = "Uzr, men bunday so'rovga javob bera olmayman."
-        // }
-        // 
+        else if(createdP.textContent == "Qalesan" || createdP.textContent=="qalesan"){
+            Reply.textContent = "Yaxshi, o'zingizchi?"
+        }
+        else if(createdP.textContent =="yaxshi" || createdP.textContent =="men ham yaxshiman"|| createdP.textContent=="men yaxshiman"){
+            Reply.textContent = "Xursandman. Boshqa savolingiz yo'qmi?"
+        }
+        else if(createdP.textContent =="yomon"|| createdP.textContent=="men yomonman"){
+            Reply.textContent = "Battar bo'ling"
+        }
+        else{
+            Reply.textContent = "Uzr, men bunday so'rovga javob bera olmayman."
+        }
+        
         ReplyText.append(Reply)
         ReplyDiv.append(ReplyProfile)
         ReplyDiv.append(ReplyText)
         messages.append(ReplyDiv)
+        scrollTo(0, 1000000)
     }
-    scrollTo(0, 1000000)
 })
